@@ -1,7 +1,9 @@
 let firstName = "Clint";
 let lastName ="Smith";
 let fullName = firstName+" "+lastName;
+let fullName2 = `${firstName} ${lastName}`;
 console.log (fullName);
+console.log (fullName2);
 
 
 let population = 4584000;
