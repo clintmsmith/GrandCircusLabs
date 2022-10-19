@@ -9,8 +9,11 @@ if (actualTemp > desiredTemp) {
 else if (actualTemp < desiredTemp) {
     console.log (`Run heat`);
 }
-else {
+else if (actualTemp === desiredTemp) {
     console.log (`Standby`);
+}
+else {
+    console.log ('More info needed');
 }
 
 // Extended Challenge
