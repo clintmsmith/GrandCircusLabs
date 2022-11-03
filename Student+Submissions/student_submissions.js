@@ -38,6 +38,12 @@ function deleteSubmissionByName (array, name) {
     let nameIndex = (element) => element.name === name;
     array.splice(array.findIndex(nameIndex), 1);
     console.log(submissions);
+
+        // Here is an anonymous function version (shared by James Vail)
+        // // let indexOfObject = array.findIndex((object) => {
+        //     return Object.name === name;
+        // });
+        // array.splice(indexOfObject, 1);
 }
 deleteSubmissionByName(submissions, "Jack");
 
@@ -50,6 +56,8 @@ function editSubmission (array, index, score) {
     console.log(array);
 }
 editSubmission (submissions, 0, 85);
+editSubmission (submissions, 0, 59);
+editSubmission (submissions, 0, 60);
 
 
 
