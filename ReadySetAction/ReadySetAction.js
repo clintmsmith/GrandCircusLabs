@@ -13,7 +13,7 @@ function main(){
 
     // Item 3
     let listMe = document.querySelectorAll('li');
-        listMe.forEach(item => {console.log(item);});
+         listMe.forEach(item => {console.log(item.textContent);});
        
     // Item 4
     let linkMe = document.querySelector(".link");
@@ -30,7 +30,7 @@ function main(){
         showMe.style.display = "block";
 
     // Item 7
-    let userName = document.getElementById('#name');
-    let welcomeMe = document.getElementsByTagName("h1");
-        console.log(`${welcomeMe} ${userName}`);  
+    let nameMe = document.getElementById('name').value;
+    let welcomeMe = document.querySelector('h1');
+    welcomeMe.textContent = `Welcome ${nameMe}`;
 }
