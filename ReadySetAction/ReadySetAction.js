@@ -19,7 +19,7 @@ function main(){
     let linkMe = document.querySelector(".link");
         linkMe.getAttribute("href");
         linkMe.setAttribute("href", "https://www.example.com");
-        linkMe.textContent = "somehwere";
+        linkMe.textContent = "somewhere";
 
     // Item 5
     let hideMe = document.querySelector("#hide-me");

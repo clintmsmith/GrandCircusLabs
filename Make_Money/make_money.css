@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px;
+    margin: 10px;
+    width: 200px;
+    line-height: 1.5em;
+}
+
+form label {
+    font-size: 20px;
+    padding: 5px 0px;
+    display: flex;
+    align-self: center;;
+}
+
+form input {
+    font-size: 20px;
+    border-radius: 10px;
+    display: flex;
+    text-align: center;
+}
+
+form select {
+    font-size: 20px;
+    border-radius: 10px;
+    display: flex;
+    text-align: center;
+}
+
+form button {
+    font-size: 20px;
+    margin: 20px 0px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+form button:hover {
+    background-color: green;
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+.penny {
+    height: 65px;
+    width: 65px;
+    background-image: url(./Images/Penny.jpeg)
+}
+
+.nickel {
+    height: 75px;
+    width: 75px;
+    background-image: url(./Images/Nickel.jpeg)
+}
+
+.dime {
+    height: 50px;
+    width: 50px;
+    background-image: url(./Images/Dime.jpeg)
+}
+
+.quarter {
+    height: 85px;
+    width: 85px;
+    background-image: url(./Images/Quarter.jpeg)
+}
+
+.coinmaker {
+    display: flex;
+    background-repeat: repeat-x;
+    background-size: cover;
+    border-radius: 50%;
+}
