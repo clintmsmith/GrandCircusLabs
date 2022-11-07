@@ -6,9 +6,10 @@ form.addEventListener("submit", event => {
 
     let data = new FormData(form)
     let n = data.get("count")
-    let coins = data.get("cointype")
+    let coins = data.get("radioButton")
+    console.log(coins);
     for (let i = 0; i < n; i++) {
-        newCoins.innerHTML += `<div class=${coins}></div>`
+    newCoins.innerHTML += `<div class=${coins}></div>`
     }
 })
 
