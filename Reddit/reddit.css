@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+
+.bodyTitle {
+    height: 60px;
+    width: 210px;
+    border: 1px solid black;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0px 5px;
+    background-color: #FF4500;
+    color: WHITE;
+}
+
+#redditPost {
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: WHITE;
+}
+
+ion-icon {
+    height: 55px;
+    width: 55px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 210px;
+    margin: 0px 5px;
+    font-size: 15px;
+    margin-top: -15px;
+}
+
+input {
+    font-size: 15px;
+    margin: 5px 0px;
+}
+
+button {
+    font-size: 15px;
+}
+
+h3 {
+    width: 200px;
+    border: 1px solid black;
+    margin: 20px 5px 5px;
+    text-align: center;
+    font-size: 15px;
+    padding: 5px;
+    background: linear-gradient(#efefef, #9198e5);
+    color: #000;
+}
+
+img {
+    width: 205px;
+    height: auto;
+    margin: 2px 5px 5px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 5px #FF4500;
+}
+
+a {
+    text-decoration: none;
+    color: #ff4500;
+    margin-top: 5px;
+    margin-left: 5px;
+    font-size: 15px;
+}
