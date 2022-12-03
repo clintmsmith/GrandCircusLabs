@@ -1,7 +1,9 @@
-function apiCall(subreddit){
     // const form = document.getElementById(form);
     // const formData = new FormData(form);
-    // formData.get(subReddit);
+    // let subredditName = get.subReddit;
+
+function apiCall(subreddit){
+
 
     let url = `https://www.reddit.com/r/${subreddit}/.json`;
     fetch(url).then(response => response.json()).then(redditData=> {

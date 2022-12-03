@@ -1,0 +1,14 @@
+{
+  "name": "pig_latin",
+  "version": "1.0.0",
+  "description": "Grand Circus Lab - Pig Latin",
+  "main": "pig_latin.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Clint_Smith",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^29.3.1"
+  }
+}
