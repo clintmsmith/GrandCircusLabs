@@ -100,7 +100,7 @@ button {
     align-items: center;
     background: #fff;
     width: 230px;
-    box-shadow: 4px 4px 5px #FF4500;
+    box-shadow: 0 0 5px 2px #FF4500;
 }
 
 h3 {
