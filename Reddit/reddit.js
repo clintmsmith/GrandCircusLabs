@@ -4,7 +4,6 @@
 
 function apiCall(subreddit){
 
-
     let url = `https://www.reddit.com/r/${subreddit}/.json`;
     fetch(url).then(response => response.json()).then(redditData=> {
         console.log(redditData);
@@ -16,29 +15,33 @@ function apiCall(subreddit){
         const subRedditName = document.getElementsByClassName('bodyTitle');
         subRedditName.innerText = `r/${subreddit}`;
 
+        // Get the existing DIV from my HTML
         const redditPost = document.getElementById('redditPost');
         
+        // Each time you iterate through, create a new DIV
+        const card = document.createElement('div');
+        card.classList.add("redditCard");
+        // Add (append) a new "card" DIV within the existing redditPost DIV
+        redditPost.append(card);
+
+        // Get the "title" info from JSON and put that inside a new H3 element
         const title = document.createElement('h3');
         title.innerText = post.title;
-        // document.body.appendChild(title);
-
+        
+        // Get the "thumbnail image" info from JSON and put that inside a new Image element
         const img = document.createElement('img');
         img.src = post.thumbnail;
-        // document.body.appendChild(img);
 
+        // Get the "URL" info from JSON and put that inside a new A tag element
         const url = document.createElement('a');
         url.innerText = post.url;
         url.href = post.url;
-        // document.body.appendChild(url);
+        
+        // Add (append) the title, img, and url to the newly created card
+        card.append(title, img, url);
 
-        redditPost.append(title, img, url);
+        // Repeat this process each time you iterate through the loop.
     }})
 };
 
 apiCall("aww");
-
-// Since we were using "redditData.data.children[0].data.XXXXXXXX;" in a lot of places, then we can turn this into a variable (constant)
-// const post = redditData.data.children[0].data.XXXXX and fill in the last part with what we need.
-
-// Originally we were just fetching the data for index [0] and commented out the for loop.
-// If we want all the data on the page, then we uncomment the for loop and use index [i]

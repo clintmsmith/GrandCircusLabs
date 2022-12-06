@@ -1,31 +1,72 @@
 * {
     box-sizing: border-box;
+    background: #010615;
+    margin: 0px;
+    padding: 0px;
+}
+
+.bodyHead {
+    margin: 0px 0px 10px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw - 20px;
 }
 
 .bodyTitle {
     height: 60px;
-    width: 210px;
+    width: 100%;
     border: 1px solid black;
     font-size: 40px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     margin: 0px 5px;
     background-color: #FF4500;
     color: WHITE;
+    overflow: hidden;
 }
 
 #redditPost {
-    font-size: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    display: inline-grid;
+    grid-template-columns: auto;
+    gap: .75rem;
     color: WHITE;
+    position: relative;
+    margin: 0px 7px;
+}
+
+@media only screen and (min-width: 550px) {
+    #redditPost {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media only screen and (min-width: 780px) {
+    #redditPost {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+
+@media only screen and (min-width: 1050px) {
+    #redditPost {
+        grid-template-columns: auto auto auto auto;
+    }
+}
+
+@media only screen and (min-width: 1250px) {
+    #redditPost {
+        grid-template-columns: auto auto auto auto auto;
+    }
 }
 
 ion-icon {
-    height: 55px;
-    width: 55px;
+    height: 50px;
+    width: 65px;
+    padding: 20px;
+    background-color: #FF4500;
 }
 
 form {
@@ -40,35 +81,58 @@ form {
 input {
     font-size: 15px;
     margin: 5px 0px;
+    cursor: pointer;
+    background: #fff;
 }
 
 button {
     font-size: 15px;
+    cursor: pointer;
+    background: #fff;
+}
+
+.redditCard {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    width: 230px;
+    box-shadow: 4px 4px 5px #FF4500;
 }
 
 h3 {
-    width: 200px;
+    width: 210px;
+    height: 70px;
     border: 1px solid black;
-    margin: 20px 5px 5px;
     text-align: center;
     font-size: 15px;
-    padding: 5px;
-    background: linear-gradient(#efefef, #9198e5);
+    background: linear-gradient(#f3f1f1, #7680e6);
     color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0px;
 }
 
 img {
-    width: 205px;
-    height: auto;
-    margin: 2px 5px 5px;
+    width: 210px;
+    height: 210px;
+    object-fit: contain;
     border: 1px solid black;
-    box-shadow: 2px 2px 5px #FF4500;
 }
 
 a {
     text-decoration: none;
     color: #ff4500;
-    margin-top: 5px;
-    margin-left: 5px;
+    margin: 10px 0px;
     font-size: 15px;
+    background: #fff;
+}
+
+a:hover {
+    color: #000;
+    font-weight: 800;
 }
