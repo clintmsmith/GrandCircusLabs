@@ -1,26 +1,25 @@
 {
-  "name": "race_cars",
+  "name": "shops_pt1",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "directories": {
-    "test": "tests"
-  },
   "scripts": {
     "test": "jest",
-    "start": "ts-node",
-    "start:dev": "nodemon"
+    "start" : "nodemon index.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.15",
     "@types/jest": "^29.2.5",
+    "@types/node": "^18.11.18",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
     "jest": "^29.3.1",
     "nodemon": "^2.0.20",
+    "ts-jest": "^29.0.3",
     "ts-node": "^10.9.1"
-  },
-  "dependencies": {
-    "ts-jest": "^29.0.3"
   }
 }
