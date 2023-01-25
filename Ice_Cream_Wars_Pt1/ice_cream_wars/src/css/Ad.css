@@ -1,0 +1,59 @@
+.Ad {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #222;
+    padding: 10px 20px;
+    font-weight: bold;
+    width: 180px;
+    height: 120px;
+    box-shadow: 0 1px 4px 3px #888;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.Ad p {
+    margin: 0;
+}
+
+p.Ad__choice {
+    margin-top: 5px;
+    font-family: Caveat, sans-serif;
+}
+
+.Ad.Light.Chocolate {
+    background-color: #a16464de;
+}
+
+.Ad.Natural.Chocolate {
+    background-color: #773e3ec7;
+}
+
+.Ad.Dark.Chocolate {
+    background-color: #4b2c2cc0;
+}
+
+.Ad.Light.Vanilla {
+    background-color: #f5ebda;
+}
+
+.Ad.Natural.Vanilla {
+    background-color: #f3dfba;
+}
+
+.Ad.Dark.Vanilla {
+    background-color: #f5d69e;
+}
+
+.Ad.Light.Strawberry {
+    background-color: #dd6565;
+}
+
+.Ad.Natural.Strawberry {
+    background-color: #d32727;
+}
+
+.Ad.Dark.Strawberry {
+    background-color: #b80606;
+}

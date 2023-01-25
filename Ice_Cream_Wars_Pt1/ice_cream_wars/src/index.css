@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Permanent+Marker&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: Permanent Marker, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.header {
+  text-align: center;
+  border-bottom: 4px solid lightgray;
+}
+
+.header-text {
+  font-size: 3.5rem;
+  color: #0e3c7e;
+}
+
+.root .main {
+  display: flex;
+  flex-direction: row;
+}
+
+.AdDesign {
+  margin-left: 50px;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin: 35px 0 15px;
+}
+
+button {
+  color: white;
+  font-size: 120%;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 10px;
+}
+
+button.button-vote-chocolate {
+  background-color: #773e3ec7;
+}
+
+button.button-vote-vanilla {
+  background-color: #f3dfba;
+}
+
+button.button-vote-strawberry {
+  background-color: #d32727;
+}
+
+button.button-light {
+  background-color: #1761c9;
+}
+
+button.button-natural {
+  background-color: #0e3c7e;
+}
+
+button.button-dark {
+  background-color: #082347;
+}
+
+button.button-fontSizeDown {
+  background-color: blue;
+}
+
+button.button-fontSizeUp {
+  background-color: red;
+}
+
+input.fontSizeCurrent {
+  font-size: 155%;
+  width: 120px;
+  text-align: center;
+  margin: 0 5px;
+}
+
+button:active {
+  background: #1e60a9;
+}
+
+button:disabled {
+  background: gray;
+}
+
+.button-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.button-bar button {
+  margin-left: 10px;
+}
+
+.button-bar button:first-child {
+  margin-left: 0;
+}

@@ -1,0 +1,45 @@
+.Votes {
+    display: flex;
+    flex-direction: column;
+}
+
+.Votes p {
+    margin-top: 8px;
+    margin-bottom: 2px;
+    font-size: 28px;
+}
+
+.Votes label {
+    font-size: 28px;
+}
+
+.progressChocolate, 
+.progressVanilla, 
+.progressStrawberry {
+    background-color: gray;
+    height: 20px;
+}
+
+.progressChocolate::-webkit-progress-bar {
+    background-color: #773e3ea9;
+}
+
+.progressVanilla::-webkit-progress-bar {
+    background-color: #ece0ca;
+}
+
+.progressStrawberry::-webkit-progress-bar {
+    background-color: #d32727;
+}
+
+button.button-vote-chocolate {
+    background-color: #773e3ec7;
+  }
+  
+  button.button-vote-vanilla {
+    background-color: #f3dfba;
+  }
+  
+  button.button-vote-strawberry {
+    background-color: #d32727;
+  }
