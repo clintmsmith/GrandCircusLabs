@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.QuoteAPI .quotes-header {
+    border-bottom: 4px solid rgb(0, 0, 0, 0.2);
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+.QuoteAPI .quotes-header h1 {
+    text-align: center;
+    font-family: 'Cedarville Cursive', cursive, sans-serif;
+    font-size: 80px;
+}
+
+.QuoteAPI .card-container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    justify-content: center;
+}
+
+.QuoteAPI .card {
+    width: 400px;
+    height: 175px;
+    margin: 15px 15px;
+    -webkit-box-shadow: 2px 4px 8px 2px rgba(0,0,0,0.5);
+    -moz-box-shadow: 2px 4px 8px 2px rgba(0,0,0,0.5);
+    box-shadow: 2px 4px 8px 2px rgba(0,0,0,0.5);
+    transition: 0.2s;
+    opacity: 0.7;
+}
+
+.QuoteAPI .card:hover {
+    -webkit-box-shadow: 0 0 12px 12px rgba(221, 71, 221, 0.7);
+    -moz-box-shadow: 0 0 12px 12px rgba(221, 71, 221, 0.7);
+    box-shadow: 0 0 12px 12px rgba(221, 71, 221, 0.7);
+}
+
+.QuoteAPI img {
+    opacity: 0.6;
+    position: absolute;
+    width: 100%;
+}
+
+.QuoteAPI .card .card-img-overlay {
+    display: flex;
+    align-items: flex-start;
+}
+
+.QuoteAPI .card .card-img-overlay .card-text {
+    width: 100%;
+    height: 100%;
+}
+
+.QuoteAPI .card .card-img-overlay .card-text p {
+    color: #000;
+    font-size: 22px;
+    font-weight: 600;
+    font-family: 'Shadows Into Light', cursive;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 25px;
+    left: 15px;
+}
+
+.QuoteAPI .card .card-img-overlay .card-text h4 {
+    color: #000;
+    position: absolute;
+    bottom: 20px;
+    right: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
