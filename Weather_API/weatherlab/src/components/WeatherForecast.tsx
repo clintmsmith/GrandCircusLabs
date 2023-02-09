@@ -32,5 +32,5 @@ export function WeatherForecast () {
     <div className="WeatherForecast">
       { weather !== undefined && <>{displayPeriods}</> }
     </div>
-  );
+    );
 }

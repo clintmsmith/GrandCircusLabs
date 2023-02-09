@@ -1,0 +1,68 @@
+.MenuList {
+    width: 70%;
+}
+
+.MenuList .MenuItem {
+    border: 1px solid black;
+    padding: 10px 10px 10px 20px;
+    margin: 10px 0px 5px 15px;
+    border-radius: 5px;
+    font-family: var(--font-alt);
+    display: flex;
+    background: var(--color-white);
+}
+
+.MenuList .MenuItem .MenuItem-main {
+    width: 75%;
+}
+
+.MenuList .MenuItem .MenuItem-main h3 {
+    margin-bottom: 5px;
+}
+
+.MenuList .MenuItem .MenuItem-main ul {
+    list-style-type: none;
+}
+
+.MenuList .MenuItem .MenuItem-main ul li {
+    margin: 5px 10px 5px 0px;
+    font-size: 15px;
+}
+
+.MenuList .MenuItem .MenuItem-main button {
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin: 7px 10px 0 0;
+    background: var(--color-golden);
+    cursor: pointer;
+}
+
+.MenuList .MenuItem .MenuItem-main button.button-add:hover {
+    background: var(--color-green_dark);
+    color: #fff;
+    transition: 0.3s;
+}
+
+.MenuList .MenuItem .MenuItem-main button.button-remove:hover {
+    background: var(--color-red);
+    color: #fff;
+    transition: 0.3s;
+}
+
+.MenuList .MenuItem .MenuItem-image {
+    width: 25%;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 175px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MenuList .MenuItem .MenuItem-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}

@@ -30,6 +30,7 @@ function SocialPosts () {
 
   
   function deletePost(post:Post){
+    // removePost(posts.filter((x) => post.title !== title))
   }
 
 

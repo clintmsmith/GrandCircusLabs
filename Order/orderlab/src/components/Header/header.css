@@ -1,0 +1,25 @@
+.Header {
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: url('https://www.shutterstock.com/image-photo/easter-breakfast-beautiful-landscape-260nw-591470783.jpg');
+    background-size: 100%;
+    padding: 1em;
+}
+
+.Header h1 {
+    font-size: 66px;
+    font-family: var(--font-base);
+    color: var(--color-golden);
+    letter-spacing: 1.5px;
+}
+
+.Header p {
+    font-size: 26px;
+    font-weight: 600;
+    font-family: var(--font-base);
+    color: var(--color-black);
+    letter-spacing: 1.5px;
+}

@@ -39,7 +39,10 @@
     -moz-box-shadow: 2px 4px 8px 2px rgba(0,0,0,0.5);
     box-shadow: 2px 4px 8px 2px rgba(0,0,0,0.5);
     transition: 0.2s;
-    opacity: 0.7;
+    /* Individual Quotes appear and disappear with animation */
+    position: absolute;
+    opacity: 0.0;
+    transform: translateY(100px);
 }
 
 .QuoteAPI .card:hover {
@@ -82,4 +85,84 @@
     right: 15px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
+}
+
+.QuoteAPI .card-container .card:nth-child(2) {
+    animation-name: reveal;
+    animation-duration: 8s;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+}
+
+.QuoteAPI .card-container .card:nth-child(3) {
+    animation-name: reveal;
+    animation-duration: 8s;
+    animation-delay: 9s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+}
+
+.QuoteAPI .card-container .card:nth-child(4) {
+    animation-name: reveal;
+    animation-duration: 8s;
+    animation-delay: 17s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+}
+
+.QuoteAPI .card-container .card:nth-child(5) {
+    animation-name: reveal;
+    animation-duration: 8s;
+    animation-delay: 25s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+}
+
+.QuoteAPI .card-container .card:nth-child(6) {
+    animation-name: reveal;
+    animation-duration: 8s;
+    animation-delay: 33s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+}
+
+.QuoteAPI .card-container .card:nth-child(7) {
+    animation-name: reveal;
+    animation-duration: 8s;
+    animation-delay: 41s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+}
+
+.QuoteAPI .card-container .card:nth-child(8) {
+    animation-name: reveal;
+    animation-duration: 8s;
+    animation-delay: 49s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+}
+
+.QuoteAPI .card-container .card:nth-child(9) {
+    animation-name: reveal;
+    animation-duration: 8s;
+    animation-delay: 57s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+}
+
+.QuoteAPI .card-container .card:nth-child(10) {
+    animation-name: reveal;
+    animation-duration: 8s;
+    animation-delay: 65s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+}
+
+@keyframes reveal {
+     0.00% {opacity: 0.00;}
+    25.00% {opacity: 0.50;}
+    50.00% {opacity: 0.70;}
+    75.00% {opacity: 0.50;}
+    100.00% {opacity: 0.00;}
 }

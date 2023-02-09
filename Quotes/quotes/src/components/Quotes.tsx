@@ -17,8 +17,9 @@ export function Quotes () {
         console.log(quote)
     }, [quote]);
 
-    let displayQuotes = quote?.map((quote) => 
-        <Card inverse>
+    // Used slice to limit the number of cards mapped to our App site
+    let displayQuotes = quote?.slice(0,10).map((quote) => 
+        <Card inverse className="cards1">
         <CardImgOverlay>
         <CardText>
             <p className="quote-text">{`"` + quote.text + `"`}</p>
