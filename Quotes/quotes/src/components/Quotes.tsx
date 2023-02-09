@@ -19,7 +19,7 @@ export function Quotes () {
 
     // Used slice to limit the number of cards mapped to our App site
     let displayQuotes = quote?.slice(0,10).map((quote) => 
-        <Card inverse className="cards1">
+        <Card inverse className="cards">
         <CardImgOverlay>
         <CardText>
             <p className="quote-text">{`"` + quote.text + `"`}</p>

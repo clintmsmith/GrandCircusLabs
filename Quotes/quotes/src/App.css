@@ -39,10 +39,6 @@
     -moz-box-shadow: 2px 4px 8px 2px rgba(0,0,0,0.5);
     box-shadow: 2px 4px 8px 2px rgba(0,0,0,0.5);
     transition: 0.2s;
-    /* Individual Quotes appear and disappear with animation */
-    position: absolute;
-    opacity: 0.0;
-    transform: translateY(100px);
 }
 
 .QuoteAPI .card:hover {
