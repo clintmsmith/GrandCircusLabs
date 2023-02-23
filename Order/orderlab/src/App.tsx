@@ -7,15 +7,15 @@ import OrderContextProvider from './context/OrderContextProvider';
 
 function App() {
   return (
-    <div className="App">
-      <OrderContextProvider>
-        <Header />
-        <div className="container-main">
-          <MenuList />
-          <Sidebar />
-        </div>
+      <div className="App">
+        <OrderContextProvider>
+          <Header />
+          <div className="container-main">
+            <MenuList />
+            <Sidebar />
+          </div>
       </OrderContextProvider>
-    </div>
+      </div>
   );
 }
 

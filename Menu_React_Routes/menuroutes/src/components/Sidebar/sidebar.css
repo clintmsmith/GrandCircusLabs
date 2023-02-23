@@ -1,0 +1,58 @@
+.Sidebar {
+    width: 30%;
+    border: 1px solid black;
+    margin: 10px 5px 5px 10px;
+    border-radius: 5px;
+    background: var(--color-white);
+}
+
+.Sidebar p {
+    font-family: var(--font-alt);
+}
+
+.Sidebar .order-total {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom: 1px solid black;
+}
+
+.Sidebar .order-total p {
+    text-align: center;
+    font-size: 20px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-blue);
+    color: var(--color-black);
+}
+
+.Sidebar ol {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-end;
+    font-size: 18px;
+    margin: 10px 5px;
+}
+
+.Sidebar .order-items p {
+    text-align: center;
+    margin: 5px 10px;
+}
+
+.Sidebar .thank-you {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 5px 10px;
+    margin-top: 15px;
+    text-align: center;
+    font-size: 18px;
+    background: var(--color-blue);
+    color: var(--color-black);
+    letter-spacing: 0.7px;
+    line-height: 30px;
+    font-style: italic;
+}

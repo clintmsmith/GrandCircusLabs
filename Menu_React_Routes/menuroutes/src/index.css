@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+:root {
+  --font-base: 'Shadows Into Light', cursive;
+  --font-alt: 'Open Sans', sans-serif;
+  
+  --color-golden: #EEC824;
+  --color-black: #0C0C0C;
+  --color-white: #FFFFFF;
+  --color-blue: #add3e8;
+  --color-green_dark: #6A961F;
+  --color-green_light: #92B473;
+  --color-red: #c42d2d;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}

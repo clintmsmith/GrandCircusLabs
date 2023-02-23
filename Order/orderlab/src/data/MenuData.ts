@@ -7,7 +7,7 @@ export const menuData = [
       price: 7.50,
       vegetarian: false,
       calories: 1100,
-      image: "https://food.fnr.sndimg.com/content/dam/images/foo…pg.rend.hgtvcom.826.620.suffix/1383787290161.jpeg",
+      image: "https://cookingwithchefbryan.com/wp-content/uploads/2021/09/Chicken-and-Waffles-with-Mango-Syrup-scaled.jpg",
     },
     {
       id: "abc124",
@@ -17,7 +17,7 @@ export const menuData = [
       price: 6.75,
       vegetarian: false,
       calories: 550,
-      image: "https://www.simplyrecipes.com/thmb/XSpHSUt6_YkCXJ-…horiz-a-1600-6f8850c8046b412b940fb1d657a5ba9a.jpg",
+      image: "https://www.simplyrecipes.com/thmb/XSpHSUt6_YkCXJ-1ZRp5HfbZoWw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2010__04__eggs-benedict-horiz-a-1600-6f8850c8046b412b940fb1d657a5ba9a.jpg",
     },
     {
       id: "abc125",
@@ -37,7 +37,7 @@ export const menuData = [
       price: 9.25,
       vegetarian: false,
       calories: 800,
-      image: "https://food.fnr.sndimg.com/content/dam/images/foo…pg.rend.hgtvcom.616.462.suffix/1382540811716.jpeg",
+      image: "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2011/10/5/1/FNM_110111-WN-Dinners-001_s4x3.jpg.rend.hgtvcom.616.462.suffix/1382540811716.jpeg",
     },
     {
       id: "abc127",
@@ -47,7 +47,7 @@ export const menuData = [
       price: 10.00,
       vegetarian: false,
       calories: 875,
-      image: "https://food.fnr.sndimg.com/content/dam/images/foo…pg.rend.hgtvcom.616.462.suffix/1522444092214.jpeg",
+      image: "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2018/3/30/1/LS-Library_Chorizo-Potato-Breakfast-Burritao_s4x3.jpg.rend.hgtvcom.616.462.suffix/1522444092214.jpeg",
     },
     {
       id: "abc128",

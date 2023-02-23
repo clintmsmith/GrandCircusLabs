@@ -16,6 +16,10 @@
     letter-spacing: 1.5px;
 }
 
+.Header img {
+    height: 125px;
+}
+
 .Header p {
     font-size: 26px;
     font-weight: 600;

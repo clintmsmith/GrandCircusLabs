@@ -9,6 +9,7 @@ export function Header(){
     return (
         <div className="Header">
             <h1>Sunny Side Up</h1>
+            <img src="https://www.svgrepo.com/download/233591/breakfast-bacon.svg" />
             <p>Order Count: { order.length }</p>
         </div>
     );
