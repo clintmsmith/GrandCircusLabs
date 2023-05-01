@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Hamburger Icons</title>
+    <link rel="stylesheet" href="animated_hamburger.css">
+</head>
+<body>
+
+    <div class="examples">
+        
+        <!-- Adding aria-controls references an id that the button is controlling-->
+        <!-- Adding aria-expanded can be manipulated with JavaScript that can be use to open/close-->
+        <button class="button-one" aria-controls="primary-navigation" aria-expanded="false">
+            <!--SVGs have an infinite canvas, so using viewBox locks that into a 100 x 100 grid-->
+            <!--We made the width="250", which is a bit big for a button, but good for our experimenting here-->
+            <svg fill="var(--button-color" class="hamburger" viewBox="0 0 100 100" width="250">
+                <!--adding a rectangle with "rect"-->
+                <!--we chose x="10" because then it would center it within the 100 x 100 canvas-->
+                <!--we used y="25", "45", and "65" to move it down on our canvas-->
+                <!--rx="5" is the border-radius so makes them round, small numbers good-->
+                <rect class="line top" 
+                    width="80" height="10"
+                    x="10" y="25" rx="5">
+                </rect>
+                <rect class="line middle" 
+                    width="80" height="10"
+                    x="10" y="45" rx="5">
+                </rect>
+                <rect class="line bottom" 
+                    width="80" height="10"
+                    x="10" y="65" rx="5">
+                </rect>
+            </svg>
+        </button>
+
+        <button class="button-two" aria-controls="primary-navigation" aria-expanded="false">
+            <svg stroke="var(--button-color" class="hamburger" viewBox="0 0 100 100" width="250">
+                <!--adding a line with "line"-->
+                <!--we have to use "stroke-width" to give it weight-->
+                <!--stroke-linecap adds the rounded end onto the ends, it doesn't round off the existing ends-->
+                <!--stroke-dasharray turns our line into an array of dashes we can manipulate.  They can accept multiple values with spaces between-->
+                <!--we used opposite x1 and x2 values so when our CSS hover effect on stroke-offset occurs they move in opposite directions-->
+                <line class="line top"
+                    x1="13" x2="87" y1="40" y2="40"
+                    stroke-width="10"
+                    stroke-linecap="round"
+                    stroke-dasharray="74"
+                    stroke-dashoffset="0">
+                </line>
+                <line class="line bottom"
+                    x1="87" x2="13" y1="60" y2="60"
+                    stroke-width="10"
+                    stroke-linecap="round"
+                    stroke-dasharray="74"
+                    stroke-dashoffset="0">>
+                </line>
+            </svg>
+        </button>
+
+        <!--The stroke path (d) was created using a path creator; review that for more info-->
+        <button class="button-three" aria-controls="primary-navigation" aria-expanded="false">
+            <svg stroke="var(--button-color" fill="none" class="hamburger" viewBox="-10 -10 120 120" width="250">
+                <path class="line" stroke-width="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m 20 40 h 60 a 1 1 0 0 1 0 20h -60 a 1 1 0 0 1 0 -40 h 30 v 70">
+
+                </path>
+            </svg>
+
+        </button>
+
+    </div>
+    
+    <script src="animated_hamburger.js"></script>
+</body>
+</html>

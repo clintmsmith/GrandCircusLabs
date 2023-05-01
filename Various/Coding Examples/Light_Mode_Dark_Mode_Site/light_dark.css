@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapix.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+body {
+    transition: 0.3s;
+    background: rgb(241, 239, 239);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(57, 57, 57);
+}
+
+h1 {
+    font-size: 70px;
+    line-height: 70px;
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 300;
+    margin: 50px 10px 10px 0px;
+}
+
+p {
+    font-size: 20px;
+}
+
+a {
+    color: rgb(162, 0, 255);
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 100;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 15px 0 0;
+}
+
+.switch {
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+    background: rgb(39,38,38);
+    position: relative;
+}
+
+.flicker {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background: rgb(255,255,255);
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    box-shadow: 
+        inset 4px 4px 4px rgb(255, 255, 255),
+        inset -4px -4px 4px rgb(195 193 198 / 90%);
+    transition: 0.3s;
+}
+
+.moon {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 0 0 rgb(255, 255, 255);
+    top: 5px;
+    left: 45px;
+}
+
+.dark {
+    background: rgb(57, 57, 57);
+    transition: 0.3s;
+}
+
+.dark .flicker {
+    transform: translateX(40px);
+}
+
+/* This applies the styling to all children of the parent with class="dark" (the body) */
+.dark > * {
+    color: #fff;
+}
+
+.dark a {
+    color: rgb(246,169,241);
+}
+
+.main {
+    height: 85vh;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.main-text {
+    width: 85%;
+    padding: 30px;
+}
+
+.main .main-text p {
+    padding: 10px 0;
+}
+
+.square {
+    width: 98%;
+    margin: 1%;
+    height: 350px;
+    background: rgb(255, 255, 255);
+    text-align: center;
+}
+
+#revenoo {
+    background-image: url(./img/revenoo-app.png);
+    background-size: cover;
+}
+
+#burgerrator {
+    background-image: url(./img/burgerrator.png);
+    background-size: cover;
+}
+
+#news {
+    background-image: url(./img/news-app.png);
+    background-size: cover;
+}
+
+#dates {
+    background-image: url(./img/dates-app.png);
+    background-size: cover;
+}
+
+.dark .square {
+    background: rgb(102, 102, 102);
+    margin: 10px auto;
+}
+
+.sub-section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hero-image {
+    position: relative;
+    width: 50%;
+    height: 350px;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.cube {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    transform: rotate(-25deg) skew(25deg);
+}
+
+.cube:before {
+    content: '';
+    position: absolute;
+    width: 21px;
+    height: 100%;
+    transform: skewY(-45deg);
+    left: -20px;
+    bottom: -10px;
+}
+.cube:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 21px;
+    transform: skewX(-45deg);
+    left: -10px;
+    bottom: -20px;
+}
+
+#html {
+    left: 100px;
+    bottom: 80px;
+    background-image: url(./img/html-square.jpg);
+    background-size: cover;
+    background: rgb(165, 96, 231);
+    box-shadow: -60px 60px 20px rgb(50 50 50 / 15%);
+
+}
+
+#html::before {
+    background: rgb(172, 115, 226);
+}
+
+#html::after {
+    background: rgb(189, 154, 221);
+}
+
+#css {
+    left: 250px;
+    bottom: 240px;
+    background-image: url(./img/css-square.png);
+    background-size: cover;
+    background: rgb(227, 119, 191);
+    box-shadow: -100px 100px 20px rgb(50 50 50 / 15%);
+}
+
+#css::before {
+    background: rgb(221, 154, 207);
+}
+
+#css::after {
+    background: rgb(221, 188, 211);
+}
+
+
+#react {
+    left: 350px;
+    bottom: 40px;
+    background-image: url(./img/react-square.png);
+    background-size: cover;
+    background: rgb(119, 193, 227);
+    box-shadow: -100px 100px 20px rgb(50 50 50 / 15%);
+}
+
+#react::before {
+    background: rgb(154, 189, 221);
+}
+
+#react::after {
+    background: rgb(188, 200, 221);
+}
+
+#javascript {
+    left: 450px;
+    bottom: 200px;
+    background-image: url(./img/css-square.png);
+    background-size: cover;
+    background: rgb(119, 227, 186);
+    box-shadow: -40px 40px 20px rgb(50 50 50 / 15%);
+}
+
+#javascript::before {
+    background: rgb(154, 221, 202);
+}
+
+#javascript::after {
+    background: rgb(188, 221, 212);
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 100px 30px;
+    background: rgb(136, 136, 136);
+}
+
+.dark footer {
+    background: rgb(28, 28, 28);
+}
+
+@media only screen and (min-width: 970px) {
+    .main-text {
+        width: 50%;
+    }
+    .square {
+        width: 48%;
+        margin: 1%;
+        height: 600px;
+    }
+}
+
+
+@media only screen and (max-width: 1300px) {
+    .hero-image {
+        display: none;
+    }
+}

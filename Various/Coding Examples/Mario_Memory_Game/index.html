@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <ul class="header-list">
+        <li><h1 class="list-h1">Memory Game</h1></li>
+        <li>
+          <audio
+            id="myAudio"
+            src="https://ia903108.us.archive.org/24/items/smb3music/1%20-%20Track%201.mp3"
+            preload="auto"
+          ></audio>
+          <button class="sound-toggle" value="sound" onclick="togglePlay()">
+            Music
+          </button>
+        </li>
+        <li><button class="reset-button">Reset Game</button></li>
+      </ul>
+    </header>
+    <div class="timer">
+      <!-- should not use labels when its not an input future reference. -->
+      <label id="minutes">00</label>
+      <label id="colon">:</label>
+      <label id="seconds">00</label>
+    </div>
+    <!-- <div id="timer"></div>
+<button id ="stop_timer" onclick="clearInterval(timerVar)">Stop time</button> -->
+    <main class="page-container">
+      <section class="pop-up">
+        <p class="pop-up-header">HOW TO PLAY:</p>
+        <p class="pop-up-text">
+          Click "Start Game" to start the timer and begin the game. Click two
+          cards in the grid to turn them face up. If those cards match, they are
+          removed from the grid and the player continues by selecting two more
+          cards. Once all the cards are matched and removed, the game ends and
+          the timer stops. Try to complete the game in the shortest amount of
+          time possible. If you want to start over, click the reset button.
+        </p>
+        <button class="start-button">Start Game</button>
+      </section>
+
+      <section class="pop-up-2">
+        <p class="pop-up-header">YOU WON!</p>
+        <p>Wahoo! You've matched all a' da cards!</p>
+        <iframe
+          src="https://giphy.com/embed/YTtqB2j5EN7IA"
+          width="300"
+          height="300"
+          frameborder="0"
+          class="giphy-embed"
+          allowfullscreen
+        ></iframe>
+        <p>
+          <!-- <a href="https://giphy.com/gifs/thread-edition-hyper-YTtqB2j5EN7IA"
+            >via GIPHY</a
+          > -->
+        </p>
+      </section>
+      <!-- <button class="restart-game">Reset Game</button> -->
+
+      <section class="grid"></section>
+    </main>
+    <footer class="page-footer">Made by Us sloppyright2021 C</footer>
+    <script src="script.js"></script>
+  </body>
+</html>

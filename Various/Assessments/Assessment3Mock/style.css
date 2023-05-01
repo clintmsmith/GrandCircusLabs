@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+label {
+    display: inline-block;
+    padding: 10px 10px 0px 0px;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+input {
+    font-size: 15px;
+}
+
+button {
+    font-size: 20px;
+    height: 40px;
+    width: 125px;
+    border-radius: 7px;
+    border: 1px solid black;
+    margin-top: 7px;
+    cursor: pointer;
+}
+
+#placeholder {
+    margin-top: 10px;
+}
+
+.shape {
+    border: 3px solid lightblue;
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.highlighted {
+    background-color: rebeccapurple;
+    color: #fff;
+    border: 7px solid black;
+    font-weight: 600;
+}

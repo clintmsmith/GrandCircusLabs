@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navigation Bar</title>
+    <link rel="stylesheet" href="navigation.css">
+</head>
+<body>
+<div class="content-container">
+    <div class="memory-game">Memory Game</div>
+    <div class="theme-container">
+        <p class="theme">Choose Your Theme!</p>
+    </div>
+    <div class="navigation-container">    
+    <div class="navigation">
+        <ul>
+            <li class="list active" id="home">
+                <a href="#">
+                    <span class="icon" style="--clr: #70838b;" onclick="changeColor(`#70838b`); changeImage('./BackgroundImages/cars.jpg')">
+                        <ion-icon name="car-sport-outline"></ion-icon>
+                    </span>
+                    <span class="text">Cars</span>
+                </a>
+            </li>
+            <li class="list" id="user">
+                <a href="#">
+                    <span class="icon chosen" style="--clr: #6aee11;" onclick="changeColor(`#6aee11`); changeImage('./BackgroundImages/cartoons.jpg')">
+                        <ion-icon name="color-palette-outline"></ion-icon>
+                    </span>
+                    <span class="text">Cartoons</span>
+                </a>
+            </li>
+            <li class="list" id="chat">
+                <a href="#">
+                    <span class="icon" style="--clr: #2e86de;" onclick="changeColor(`#2e86de`); changeImage('./BackgroundImages/food.jpg')">
+                        <ion-icon name="pizza-outline"></ion-icon>
+                    </span>
+                    <span class="text">Food</span>
+                </a>
+            </li>
+            <li class="list" id="photos">
+                <a href="#">
+                    <span class="icon" style="--clr: #800aaf;" onclick="changeColor(`#800aaf`); changeImage('./BackgroundImages/space.jpg')">
+                        <ion-icon name="planet-outline"></ion-icon>
+                    </span>
+                    <span class="text">Space</span>
+                </a>
+            </li>
+            <li class="list" id="settings">
+                <a href="#">
+                    <span class="icon" style="--clr: #4ad0da;" onclick="changeColor(`#4ad0da`); changeImage('./BackgroundImages/sports.png')">
+                        <ion-icon name="american-football-outline"></ion-icon>
+                    </span>
+                    <span class="text">Sports</span>
+                </a>
+            </li>
+            <div class="indicator"></div>
+        </ul>
+    </div>
+    </div>
+    <img id="theme-image" src="./BackgroundImages/cars.jpg">
+    <button class="select">Ready</button>
+</div>
+
+    <script src="navigation.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    background: hsl(48, 18%, 83%);
+}
+
+.examples {
+    padding: 3rem;
+    max-width: 1200px;
+    display: flex;
+    gap: clamp(2rem, 8vh, 4rem);
+}
+
+button {
+    background: transparent;
+    border-radius: 1rem;
+    border: 10px solid var(--button-color, #000);
+}
+
+
+/* BUTTON ONE */
+.button-one {
+    --button-color: #333;
+}
+
+.button-one .line {
+    transition:
+        y 300ms ease-in 300ms,
+        transform 300ms ease-in,
+        opacity 0ms 300ms
+        ;
+    transform-origin: center;
+}
+
+.button-one:hover .line {
+    transition:
+        y 300ms ease-in,
+        transform 300ms ease-in 300ms,
+        opacity 0ms 300ms;
+}
+
+/* we get an error here because "y" isn't a CSS property, but it is a SVG property */
+.button-one:hover :is(.top, .bottom) {
+    y: 45;
+}
+
+.button-one:hover .top {
+    transform: rotateZ(45deg);
+}
+
+.button-one:hover .middle {
+    opacity: 0;
+}
+
+.button-one:hover .bottom {
+    transform: rotateZ(-45deg);
+}
+
+
+/* BUTTON TWO */
+.button-two {
+    --button-color: #232;
+}
+
+.button-two .line {
+    /* transition: stroke-dashoffset 1s; */
+    animation: to-open-icon 1s forwards;
+}
+
+/* This impacts the the stroke-dashoffset entered in the HTML and pulls them a direction */
+/* By entering the x1 and x2 opposite there and using a value here just below the difference */
+/* in those values, they pull apart and leave just a single dash */
+/* Ultimately, we commented that out and used this in "animation" instead */
+.button-two:hover .line {
+    /* stroke-dashoffset: 73.9; */
+    animation: to-close-icon 1s forwards;
+}
+
+.button-two .line.top {
+    --rotation: -45deg;
+    transform-origin: 65px 45px;
+}
+
+.button-two .line.bottom {
+    --rotation: 45deg;
+    transform-origin: 60px 55px;
+}
+
+@keyframes to-close-icon {
+    0% {stroke-dashoffset: 0;}
+    40% {stroke-dashoffset: 73.9;}
+    60% {stroke-dashoffset: 73.9; transform: rotateZ(var(--rotation))}
+    100% {stroke-dashoffset: 0; transform: rotateZ(var(--rotation))}
+}
+
+@keyframes to-open-icon {
+    0% {stroke-dashoffset: 0; transform: rotateZ(var(--rotation))}
+    40% {stroke-dashoffset: 73.9; transform: rotateZ(var(--rotation))}
+    60% {stroke-dashoffset: 73.9;}
+    100% {stroke-dashoffset: 0;}
+}
+
+
+/* BUTTON THREE */
+.button-three {
+    --button-color: #000;
+    overflow: hidden;
+}
+
+.button-three .hamburger {
+    transition: translate 1s, rotate 1s;
+}
+
+/* You can use this setup without JavaScript and it opens/closes based on hover */
+/* .button-three:hover .hamburger {
+    Can't quite get it to move into the right position
+    translate: transform(20px, -10px);
+    transform: rotateZ(0.125turn);
+} */
+
+.button-three[aria-expanded="true"] .hamburger {
+    /* Can't quite get it to move into the right position*/
+    /* translate: transform(20px, -10px); */
+    transform: translateX(15px) translateY(-5px) rotateZ(0.125turn);
+}
+
+.button-three .line {
+    stroke-dasharray: 60 31 60 300;
+    transition: 1s;
+}
+
+/* You can use this setup without JavaScript and it opens/closes based on hover */
+/* .button-three:hover .line {
+    stroke-dasharray: 60 105 60 300;
+    stroke-dashoffset: -90;
+} */
+
+.button-three[aria-expanded="true"] .line {
+    stroke-dasharray: 60 105 60 300;
+    stroke-dashoffset: -90;
+}

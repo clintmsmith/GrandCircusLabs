@@ -1,0 +1,299 @@
+@font-face {
+    font-family: "Super-Mario";
+    src: url("Super-Mario.ttf.woff") format("woff"),
+      url("Super-Mario.ttf.svg#Super-Mario") format("svg"),
+      url("Super-Mario.ttf.eot"),
+      url("Super-Mario.ttf.eot?#iefix") format("embedded-opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Super-Mario-Bros";
+    src: url("Super-Mario-Bros.ttf.woff") format("woff"),
+      url("Super-Mario-Bros.ttf.svg#Super-Mario-Bros") format("svg"),
+      url("Super-Mario-Bros.ttf.eot"),
+      url("Super-Mario-Bros.ttf.eot?#iefix") format("embedded-opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  body {
+    font-family: "Super-Mario-Bros";
+    /* display: flex; */
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+  .page-header {
+    padding: 5px;
+    display: flex;
+    background-color: black;
+    color: white;
+    justify-content: center;
+    align-items: center;
+  }
+  .header-list {
+    padding: 0px;
+    display: flex;
+    width: 60vh;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+  }
+  .list-h1 {
+    font-size: x-large;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  .reset-button,
+  .sound-toggle {
+    display: flex;
+    border-radius: 10px;
+    padding: 5px;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-family: "Super-Mario";
+    font-size: large;
+  }
+  .timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: large;
+    font-weight: bolder;
+    padding: 0;
+    margin: 0;
+  }
+  .page-container {
+    /*.... */
+    display: relative;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .pop-up {
+    position: fixed;
+    /* display: flex; */
+    border: 2px solid white;
+    border-radius: 10px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -60%);
+    width: 80%;
+    height: 50%;
+    background-color: rgba(255, 0, 0, 0.6);
+    text-align: center;
+    color: white;
+    padding: 0;
+    margin: 0;
+    /* justify-content: center; */
+    /* align-items: center; */
+    z-index: 1;
+    /* display: none; */
+    font-family: "Super-Mario";
+  }
+  .pop-up-2 {
+    position: fixed;
+    /* display: flex; */
+    border: 2px solid white;
+    border-radius: 10px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -60%);
+    width: 80%;
+    height: 50%;
+    background-color: rgba(255, 0, 0, 0.6);
+    text-align: center;
+    color: white;
+    padding: 0;
+    margin: 0;
+    visibility: hidden;
+    /* justify-content: center; */
+    /* align-items: center; */
+    z-index: 1;
+    font-family: "Super-Mario";
+  }
+  
+  /* .gif {
+    width: 50%;
+    height: 25%;
+    position: fixed; */
+  /* left: 50%;
+    top: 50%;
+    transform: translate(-50%, -60%); */
+  /* } */
+  .pop-up-header {
+    font-family: "Super-Mario-Bros";
+    font-weight: bolder;
+    font-size: x-large;
+    padding: 0px 0px 5px 0;
+    margin: 5px 0px 0px 0px;
+  }
+  .pop-up-text {
+    margin-top: 10px;
+    margin-left: 3px;
+    margin-right: 3px;
+    font-style: italic;
+    font-size: large;
+    font-family: "Super-Mario";
+  }
+  .start-button {
+    margin-top: 10px;
+    font-size: large;
+    font-family: "Super-Mario";
+  }
+  .grid {
+    width: 277px;
+    /* width: 40vh; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    /* pointer-events: none; */
+    /* justify-content: center;  */
+  }
+  
+  /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+  .flip-card {
+    background-color: transparent;
+    width: 65px;
+    height: 90px;
+    margin: 2px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* text-align: center; */
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  
+    background-repeat: no-repeat;
+  
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: black;
+  
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: black;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  
+  .hide {
+    transition: 1s;
+    opacity: 0;
+  }
+  
+  @media only screen and (min-width: 600px) {
+    /* body {
+       background-color: lightblue; 
+    } */
+    .list-h1,
+    .sound-toggle,
+    .reset-button {
+      font-size: 25px;
+    }
+    .timer {
+      font-size: 30px;
+    }
+    .pop-up {
+      width: 500px;
+    }
+    .pop-up-2 {
+      width: 500px;
+    }
+    .grid {
+      width: 380px;
+      /* justify-content: space-between; */
+    }
+    .flip-card {
+      margin: 5px;
+      width: 85px;
+      height: 115px;
+    }
+    .pop-up-header {
+      font-size: 30px;
+    }
+    .pop-up-text {
+      margin-top: 25px;
+      margin-left: 5px;
+      margin-right: 5px;
+      font-style: italic;
+      font-size: 22px;
+      font-family: "Super-Mario";
+    }
+  }
+  @media only screen and (min-width: 768px) {
+    /* body {
+      background-color: violet; 
+    } */
+    .list-h1,
+    .sound-toggle,
+    .reset-button {
+      font-size: 30px;
+    }
+    .timer {
+      font-size: 35px;
+    }
+    .pop-up {
+      width: 700px;
+      height: 550px;
+    }
+    .pop-up-2 {
+      width: 700px;
+      height: 550px;
+    }
+    .grid {
+      width: 485px;
+      /* justify-content: space-between; */
+    }
+    .flip-card {
+      margin: 8px;
+      width: 105px;
+      height: 140px;
+    }
+    .pop-up-header {
+      font-size: 35px;
+    }
+    .pop-up-text {
+      margin-top: 35px;
+      margin-left: 10px;
+      margin-right: 10px;
+      font-style: italic;
+      font-size: 25px;
+      font-family: "Super-Mario";
+    }
+  }

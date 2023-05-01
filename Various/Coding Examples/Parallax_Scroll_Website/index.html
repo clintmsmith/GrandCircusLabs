@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Scrolling Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <a href="#" class="logo">Logo</a>
+        <ul class="navigation">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+
+    <section>
+        <h2 id="txt">Hello Winter</h2>
+        <img src="./images/monutain_01.png" id="m1">
+        <img src="./images/mountain_02.png" id="m2">
+        <img src="./images/mountain_03.png" id="m3">
+        <img src="./images/mountain_04.png" id="m4">
+        <img src="./images/trees.png" id="tr">
+        <img src="./images/cable_cars.png" id="crs">
+        <img src="./images/house.png" id="house">
+    </section>
+    
+    <div class="sec">
+        <h2>Parallax Scrolling Website</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis distinctio praesentium asperiores nulla architecto dicta voluptatibus, mollitia officia? Magni nulla consequuntur eum delectus. Totam et vero rem sint quod natus non! Laboriosam excepturi hic velit amet molestiae aut! Earum ab obcaecati corporis, voluptatibus eligendi inventore aperiam aliquid consequuntur, quasi expedita eaque eveniet aut hic. Laboriosam vero rem officiis quisquam dignissimos, nesciunt atque possimus animi asperiores corporis amet veritatis harum doloribus ad enim magni perspiciatis optio culpa provident saepe veniam! Perferendis at iusto qui minima sint? Tempora alias, repellendus quo, vero omnis quibusdam ut asperiores aut amet ducimus nulla natus consequuntur?</p><br><br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid eos soluta fugiat hic, sint nam repellat reiciendis praesentium minima possimus explicabo architecto culpa doloremque sunt ipsa dolore maiores odit consectetur dolorum sed deserunt excepturi nostrum modi! Magnam aliquam aut minus in, accusantium explicabo distinctio repudiandae dicta, odio illo facilis dolorem labore maiores dolores eos non amet. Veniam, veritatis. Provident explicabo exercitationem ratione laboriosam cum velit beatae magni, facilis necessitatibus ipsum culpa asperiores omnis porro numquam libero ut ipsa dolore quae, ullam error in repudiandae. Laudantium commodi cupiditate temporibus, nisi quod similique in autem, inventore reprehenderit quasi ad eaque dolores molestiae.</p>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.from("#txt", {
+            scrollTrigger : {
+            scrub: true
+        },
+        x: 350,
+        })
+
+        gsap.from("#m1", {
+            scrollTrigger : {
+            scrub: true
+        },
+        y: 100,
+        })
+
+        gsap.from("#m2", {
+            scrollTrigger : {
+            scrub: true
+        },
+        y: 50,
+        })
+
+        gsap.from("#m3", {
+            scrollTrigger : {
+            scrub: true
+        },
+        y: 200,
+        })
+
+        gsap.from("#m4", {
+            scrollTrigger : {
+            scrub: true
+        },
+        y: 150,
+        })
+
+        gsap.from("#tr", {
+            scrollTrigger : {
+            scrub: true
+        },
+        y: 150,
+        })
+
+        gsap.from("#crs", {
+            scrollTrigger : {
+            scrub: true
+        },
+        x: 100,
+        })
+
+        gsap.from("#house", {
+            scrollTrigger : {
+            scrub: true
+        },
+        y: 50,
+        })
+    </script>
+</body>
+</html>
